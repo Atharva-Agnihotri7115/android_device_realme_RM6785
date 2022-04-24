@@ -16,9 +16,6 @@ PRODUCT_COMPRESSED_APEX := false
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/RM6785/RM6785-vendor.mk)
 
-# Parts
-$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
-
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
@@ -333,6 +330,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
-
-# RealmeParts
-$(call inherit-product,$(LOCAL_PATH)/parts.mk
